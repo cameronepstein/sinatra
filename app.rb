@@ -17,5 +17,6 @@ get '/golly' do
 end
 
 get '/cat' do
-	erb(:index)
+  @names = ["amigo", "oscar", "viking"].sample
+  erb(:index)
 end
